@@ -20,6 +20,5 @@ functions/*
 .temp/**
 
 .eslintcache
-*.less
 node_modules/
 .tea/
