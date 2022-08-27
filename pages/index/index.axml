@@ -1,0 +1,9 @@
+<view class="box">
+  <view class="text-style">
+    this is a blank page
+  </view>
+  
+  <!-- 测试ui 组件 -->
+  <tag className="myTag">default</tag>
+  
+</view>
