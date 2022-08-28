@@ -1,0 +1,5 @@
+<view class="hamburger-popup">
+  <popup visible="{{basicShow}}" maskClosable="{{true}}" position="left" animation="{{true}}" onClose="handlePopupClose">
+    13256
+  </popup>
+</view>

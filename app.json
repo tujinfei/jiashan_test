@@ -1,6 +1,41 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": [
+    "pages/find/find",
+    "pages/podcast/podcast",
+    "pages/my/my",
+    "pages/focus/focus",
+    "pages/community/community"
+  ],
   "window": {
-    "defaultTitle": "My App"
+    "defaultTitle": "jiashan_test"
+  },
+  "tabBar": {
+    "textColor": "#000",
+    "selectedColor": "rgb(255,0,0)",
+    "backgroundColor": "#eee",
+    "items": [
+      {
+        "pagePath": "pages/find/find",
+        "name": "发现",
+        "icon": "/images/tabBar/find/find.png",
+        "activeIcon": "/images/tabBar/find/selectedFind.png"
+      },
+      {
+        "pagePath": "pages/podcast/podcast",
+        "name": "播客"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "name": "我的"
+      },
+      {
+        "pagePath": "pages/focus/focus",
+        "name": "关注"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "name": "社区"
+      }
+    ]
   }
 }

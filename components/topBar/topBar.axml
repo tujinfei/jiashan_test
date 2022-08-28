@@ -1,0 +1,18 @@
+<view class="topBar pagePadding">
+  <!-- 顶部内容区 -->
+  <view class="content-area">
+    <view class="left" onTap="showHamburgerPopup">
+      <am-icon type="BankcardOutline" color="#1677ff" size="small" />
+    </view>
+    <view class="center">
+      <slot name="center"></slot>
+    </view>
+    <view class="right">
+      <slot name="right"></slot>
+    </view>
+  </view>
+  
+  
+  <!-- 汉堡弹出组件 -->
+  <hamburger-popup ref="hamburgerPopupRef" />
+</view>

@@ -1,0 +1,16 @@
+<view class="find">
+  <!-- 顶部条 -->
+  <top-bar>
+    <view slot="center">
+      中
+    </view>
+    <view slot="right">
+      右
+    </view>
+  </top-bar>
+  find
+  
+  <!-- 底部播放区 -->
+  <bottom-player-area/>
+  
+</view>
