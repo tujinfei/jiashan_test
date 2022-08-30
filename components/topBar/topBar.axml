@@ -1,6 +1,6 @@
-<view class="topBar pagePadding">
+<view class="topBar">
   <!-- 顶部内容区 -->
-  <view class="content-area">
+  <view class="content-area pagePadding">
     <view class="left" onTap="showHamburgerPopup">
       <am-icon type="BankcardOutline" color="#1677ff" size="small" />
     </view>

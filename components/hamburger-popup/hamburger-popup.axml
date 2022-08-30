@@ -1,5 +1,22 @@
 <view class="hamburger-popup">
   <popup visible="{{basicShow}}" maskClosable="{{true}}" position="left" animation="{{true}}" onClose="handlePopupClose">
-    13256
+    
+    
+    
+    <container title="音乐服务" headerInBox="{{true}}" class="title-card">
+      
+      <list>
+        <list-item image="FaceRecognitionOutline" arrow="right" last="{{true}}">账单</list-item>
+        <list-item image="FaceRecognitionOutline" arrow="right" last="{{true}}">账单</list-item>
+        <list-item image="FaceRecognitionOutline" arrow="right" last="{{true}}">账单</list-item></list></container>
+    
+    
+    
+    <list class="no-title-card">
+      <list-item image="FaceRecognitionOutline" arrow="right">账单</list-item>
+      <list-item>2</list-item>
+      <list-item>3</list-item></list>
+    
+    
   </popup>
 </view>

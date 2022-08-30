@@ -8,7 +8,9 @@
       右
     </view>
   </top-bar>
-  find
+  <view class="find-main">
+    find
+  </view>
   
   <!-- 底部播放区 -->
   <bottom-player-area/>

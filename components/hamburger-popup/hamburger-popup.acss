@@ -1,0 +1,13 @@
+.hamburger-popup .amd-popup-content {
+  background-color: #eee;
+}
+.hamburger-popup .amd-popup-content .title-card .amd-container-content {
+  padding: 0;
+}
+.hamburger-popup .amd-popup-content .title-card .amd-container-content .amd-list-body {
+  border-radius: 16rpx;
+}
+.hamburger-popup .amd-popup-content .no-title-card .amd-list-body {
+  margin-top: 10px;
+  border-radius: 16rpx;
+}

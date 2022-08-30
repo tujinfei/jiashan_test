@@ -1,12 +1,10 @@
-.topBar {
+.topBar .content-area {
   position: fixed;
   height: 60rpx;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
-}
-.topBar .content-area {
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
