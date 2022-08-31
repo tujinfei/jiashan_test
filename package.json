@@ -1,14 +1,22 @@
 {
   "name": "jiashan_test",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [ ] 自造 js 数据, 把卡片都渲染出, 每一项先输入图标和内容\r - [ ] 默认都带箭头和跳转,深色模式传没有箭头标识符 flag\r - [ ] 这步,需要先想下,结合每个卡片具体的传值情况.每一项里面再传右箭头左边的小图标和文本,结合 list-item 组件,看怎么传",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tujinfei/jiashan_test.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tujinfei/jiashan_test/issues"
+  },
+  "homepage": "https://github.com/tujinfei/jiashan_test#readme",
   "dependencies": {
     "antd-mini": "0.0.21"
   }

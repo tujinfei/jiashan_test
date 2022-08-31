@@ -1,21 +1,35 @@
 <view class="hamburger-popup">
-  <popup visible="{{basicShow}}" maskClosable="{{true}}" position="left" animation="{{true}}" onClose="handlePopupClose">
+  <popup visible="{{basicShow}}" maskClosable="{{true}}" position="left" animation="{{true}}" onClose="handlePopupClose" 
+    disableScroll="{{false}}">
     
-    
-    
-    <container title="音乐服务" headerInBox="{{true}}" class="title-card">
+    <scroll-view scroll-y="{{true}}" style="height: 1046rpx">
+      <view>
+        <view a:for="{{dataOrigin}}" a:for-index="itemKey" a:for-item="itemValue">
+          <container title="{{itemKey}}" headerInBox="{{true}}" class="title-card" a:if="{{itemKey==='音乐'||itemKey==='其他'}}">
+            <list>
+              <list-item arrow="{{item.hasArrow !==false?'right':''}}" last="{{true}}" extraBrief="未开启" a:for="{{itemValue}}" 
+                key="{{index}}">
+                <view slot="image">
+                  <image mode="scaleToFill" src="/images/tabBar/find/selectedFind.png" />
+                </view>
+                {{item.text}}
+              </list-item></list></container>
+          
+          
+          
+          <list class="no-title-card" a:else>
+            <list-item image="FaceRecognitionOutline" arrow="right" a:for="{{itemValue}}" key="{{index}}">{{item.text}}</list-item></list>
+          
+        </view>
+        
+        <view style="width:100%;height:24rpx;border:1px solid blue;margin-bottom:20rpx"></view>
+      </view>
       
-      <list>
-        <list-item image="FaceRecognitionOutline" arrow="right" last="{{true}}">账单</list-item>
-        <list-item image="FaceRecognitionOutline" arrow="right" last="{{true}}">账单</list-item>
-        <list-item image="FaceRecognitionOutline" arrow="right" last="{{true}}">账单</list-item></list></container>
+    </scroll-view>
     
     
     
-    <list class="no-title-card">
-      <list-item image="FaceRecognitionOutline" arrow="right">账单</list-item>
-      <list-item>2</list-item>
-      <list-item>3</list-item></list>
+    
     
     
   </popup>

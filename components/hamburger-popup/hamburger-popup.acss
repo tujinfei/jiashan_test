@@ -1,3 +1,7 @@
+.no-title-card,
+.title-card {
+  margin-bottom: 20rpx;
+}
 .hamburger-popup .amd-popup-content {
   background-color: #eee;
 }
@@ -8,6 +12,5 @@
   border-radius: 16rpx;
 }
 .hamburger-popup .amd-popup-content .no-title-card .amd-list-body {
-  margin-top: 10px;
   border-radius: 16rpx;
 }
