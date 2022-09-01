@@ -1,31 +1,69 @@
 <view class="hamburger-popup">
   <popup visible="{{basicShow}}" maskClosable="{{true}}" position="left" animation="{{true}}" onClose="handlePopupClose" 
     disableScroll="{{false}}">
-    
-    <scroll-view scroll-y="{{true}}" style="height: 1046rpx">
-      <view>
-        <view a:for="{{dataOrigin}}" a:for-index="itemKey" a:for-item="itemValue">
-          <container title="{{itemKey}}" headerInBox="{{true}}" class="title-card" a:if="{{itemKey==='音乐'||itemKey==='其他'}}">
-            <list>
-              <list-item arrow="{{item.hasArrow !==false?'right':''}}" last="{{true}}" extraBrief="未开启" a:for="{{itemValue}}" 
-                key="{{index}}">
-                <view slot="image">
-                  <image mode="scaleToFill" src="/images/tabBar/find/selectedFind.png" />
-                </view>
-                {{item.text}}
-              </list-item></list></container>
-          
-          
-          
-          <list class="no-title-card" a:else>
-            <list-item image="FaceRecognitionOutline" arrow="right" a:for="{{itemValue}}" key="{{index}}">{{item.text}}</list-item></list>
-          
-        </view>
-        
-        <view style="width:100%;height:24rpx;border:1px solid blue;margin-bottom:20rpx"></view>
+    <view>
+      <!-- 最上面区域 -->
+      <view class="up">
+        <list-item image="FaceRecognitionOutline" extraBrief="未开启">fff
+          <am-icon type="FaceRecognitionOutline" color="#1677ff" size="small" /></list-item>
       </view>
       
-    </scroll-view>
+      <!-- 下面区域 -->
+      <view class="down">
+        <scroll-view scroll-y="{{true}}" style="height: 930rpx">
+          <view class="card-area">
+            <!-- 卡片内容上部 -->
+            <view class="card-up">
+              <view class="up-title">
+                <view class="left">
+                  <view class="main-title">
+                    <view class="main-text">主文本</view>
+                    <view class="level-area">级别区</view>
+                    
+                  </view>
+                  <view class="sub-title">子</view>
+                </view>
+                <view class="right">right</view>
+              </view>
+              <view class="down-content">
+                
+                <view class="left-content">左内容</view>
+                <view class="right-content">右内容</view>
+                
+              </view>
+            </view>
+            
+            <!-- 卡片内容下部 -->
+            <view class="card-down">
+              
+              <view>
+                <view a:for="{{dataOrigin}}" a:for-index="itemKey" a:for-item="itemValue">
+                  <container title="{{itemKey}}" headerInBox="{{true}}" class="title-card" a:if="{{itemKey==='音乐'||itemKey==='其他'}}">
+                    <list>
+                      <list-item arrow="{{item.hasArrow !==false?'right':''}}" last="{{true}}" extraBrief="未开启" a:for="{{itemValue}}" 
+                        key="{{index}}">
+                        <view slot="image">
+                          <image mode="scaleToFill" src="/images/tabBar/find/selectedFind.png" />
+                        </view>
+                        {{item.text}}
+                      </list-item></list></container>
+                  
+                  
+                  
+                  <list class="no-title-card" a:else>
+                    <list-item image="FaceRecognitionOutline" arrow="right" a:for="{{itemValue}}" key="{{index}}">{{item.text}}</list-item></list>
+                  
+                </view>
+                
+                <view style="width:100%;height:24rpx;border:1px solid blue;margin-bottom:20rpx"></view>
+              </view>
+              
+            </view>
+            
+          </view>
+        </scroll-view>
+      </view>
+    </view>
     
     
     

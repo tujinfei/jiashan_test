@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/tujinfei/jiashan_test#readme",
   "dependencies": {
-    "antd-mini": "0.0.21"
+    "antd-mini": "^0.0.21"
   }
 }

@@ -1,16 +1,46 @@
+.card-up,
 .no-title-card,
 .title-card {
   margin-bottom: 20rpx;
 }
 .hamburger-popup .amd-popup-content {
+  padding: 0;
   background-color: #eee;
 }
-.hamburger-popup .amd-popup-content .title-card .amd-container-content {
+.hamburger-popup .amd-popup-content .down {
+  padding: 24rpx;
+}
+.hamburger-popup .amd-popup-content .down .card-up {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #1f1d1d;
+  border-radius: 16rpx;
+  padding: 24rpx;
+}
+.hamburger-popup .amd-popup-content .down .card-up .up-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24rpx;
+  border-bottom: 1px solid #fff;
+}
+.hamburger-popup .amd-popup-content .down .card-up .up-title .left .main-title {
+  padding-bottom: 12rpx;
+  display: flex;
+}
+.hamburger-popup .amd-popup-content .down .card-up .up-title .left .main-title .main-text {
+  margin-right: 12rpx;
+}
+.hamburger-popup .amd-popup-content .down .card-up .down-content {
+  padding-top: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.hamburger-popup .amd-popup-content .down .card-down .title-card .amd-container-content {
   padding: 0;
 }
-.hamburger-popup .amd-popup-content .title-card .amd-container-content .amd-list-body {
+.hamburger-popup .amd-popup-content .down .card-down .title-card .amd-container-content .amd-list-body {
   border-radius: 16rpx;
 }
-.hamburger-popup .amd-popup-content .no-title-card .amd-list-body {
+.hamburger-popup .amd-popup-content .down .card-down .no-title-card .amd-list-body {
   border-radius: 16rpx;
 }
