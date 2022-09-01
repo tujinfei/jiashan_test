@@ -4,7 +4,10 @@
     <view>
       <!-- 最上面区域 -->
       <view class="up">
-        <list-item image="FaceRecognitionOutline" extraBrief="未开启">fff
+        <list-item image="FaceRecognitionOutline" onTap="jumpfFlyaPage" last="{{true}}">fff
+          <view slot="extra" catchTap="scan">
+            扫码
+          </view>
           <am-icon type="FaceRecognitionOutline" color="#1677ff" size="small" /></list-item>
       </view>
       

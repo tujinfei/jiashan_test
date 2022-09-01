@@ -36,6 +36,32 @@ Component({
       this.setData({
         basicShow: false
       });
+    },
+    // 汉堡弹框扫一扫
+    scan() {
+      my.alert({
+        title: "关联没弄,扫不了"
+      });
+      console.log("扫码");
+
+      // 关联没弄,扫不了
+      // dd.scan({
+      //   type: "all"
+      // })
+      //   .then(res => {
+      //     console.log(res);
+      //   })
+      //   .catch(err => {
+      //     console.log(err);
+      //   });
+    },
+    jumpfFlyaPage() {
+      my.navigateTo({
+        url: "/pages/fFlyaPage/fFlyaPage",
+        success: () => {},
+        fail: () => {},
+        complete: () => {}
+      });
     }
   }
 });
