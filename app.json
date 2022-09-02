@@ -5,7 +5,8 @@
     "pages/my/my",
     "pages/focus/focus",
     "pages/community/community",
-    "pages/fFlyaPage/fFlyaPage"
+    "pages/fFlyaPage/fFlyaPage",
+    "pages/bar/index"
   ],
   "window": {
     "defaultTitle": "jiashan_test"

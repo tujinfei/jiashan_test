@@ -10,6 +10,8 @@
   </top-bar>
   <view class="find-main">
     find
+    <navigator url="/pages/bar/index" open-type="navigate">
+      <button size="default" type="primary">Button</button></navigator>
   </view>
   
   <!-- 底部播放区 -->
